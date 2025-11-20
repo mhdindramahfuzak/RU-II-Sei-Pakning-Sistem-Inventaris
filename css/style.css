@@ -1,0 +1,253 @@
+/* --- VARIABEL WARNA & GLOBAL --- */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --dark-bg: #1f2937;
+    --light-gray: #e5e7eb;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 30px;
+}
+
+/* --- CONTAINER & LAYOUT --- */
+.main-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* --- HEADERS --- */
+.header-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+}
+
+.header-section h1 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+.header-section p { opacity: 0.9; margin: 0; }
+
+.form-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-header h2 { margin: 0; font-weight: 700; }
+.form-header p { margin: 10px 0 0 0; opacity: 0.9; }
+.form-body { padding: 40px; }
+
+/* --- STATS CARDS (Dashboard) --- */
+.stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.stats-card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Warna Icon Stats */
+.stats-card.primary .icon { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.stats-card.success .icon { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; }
+.stats-card.warning .icon { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; }
+.stats-card.danger .icon { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; }
+
+.stats-card h3 { font-size: 2rem; font-weight: 700; margin: 10px 0; color: var(--dark-bg); }
+.stats-card p { color: #6b7280; margin: 0; font-size: 0.9rem; }
+
+/* --- BUTTONS --- */
+.btn-modern {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-modern:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); color: white; }
+.btn-modern.btn-primary, .btn-primary-modern { background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; }
+.btn-modern.btn-dark { background: linear-gradient(135deg, #1f2937 0%, #111827 100%); color: white; }
+.btn-secondary-modern { background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%); color: white; }
+
+.btn-action {
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    margin: 2px;
+}
+.btn-action:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.btn-action.btn-success { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; }
+.btn-action.btn-warning { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; }
+.btn-action.btn-danger { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white; }
+
+/* --- FORMS & INPUTS --- */
+.form-label { font-weight: 600; color: #374151; margin-bottom: 8px; }
+.form-control, .form-select {
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+.required-mark { color: var(--danger-color); }
+
+/* --- UPLOAD AREA --- */
+.upload-area {
+    border: 3px dashed var(--light-gray);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.upload-area:hover { border-color: var(--primary-color); background: #eff6ff; }
+.upload-area i { font-size: 3rem; color: #9ca3af; margin-bottom: 15px; }
+
+/* --- TABLES --- */
+.table-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.table-card .card-header {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-bottom: 2px solid #e5e7eb;
+    padding: 20px;
+    font-weight: 600;
+    color: var(--dark-bg);
+}
+.table thead th {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: none;
+    padding: 15px;
+}
+.table tbody tr { transition: all 0.3s ease; }
+.table tbody tr:hover { background-color: #f9fafb; transform: scale(1.005); }
+.table tbody td { vertical-align: middle; padding: 15px; }
+
+.product-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.product-img:hover { transform: scale(1.1); }
+
+.badge-modern {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* --- DATATABLES OVERRIDE --- */
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 8px;
+    border: 2px solid var(--light-gray);
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.dataTables_wrapper .dataTables_length select {
+    border-radius: 8px;
+    border: 2px solid var(--light-gray);
+    padding: 5px 10px;
+}
+/* --- TAMBAHAN UNTUK HEADER PERTAMINA --- */
+.header-logo {
+    width: 80px; /* Ukuran logo, bisa diatur */
+    height: auto;
+    margin-right: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); /* Sedikit bayangan agar logo 'pop' */
+}
+
+.company-title {
+    font-size: 1.8rem;
+    font-weight: 800; /* Lebih tebal */
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase; /* Agar terlihat tegas/resmi */
+    letter-spacing: 1px;
+}
+
+.company-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 5px;
+    opacity: 0.9;
+    border-top: 1px solid rgba(255,255,255,0.3); /* Garis pemisah tipis */
+    display: inline-block;
+    padding-top: 5px;
+}
+
+/* Opsional: Mengubah warna header agar lebih 'Pertamina' (Merah/Biru/Putih) 
+   Kalau mau tetap ungu gradasi, abaikan bagian .header-section ini */
+.header-section {
+    /* Ganti background jadi gradasi biru tua ke merah khas BUMN jika mau */
+    background: linear-gradient(135deg, #00539C 0%, #B0171F 100%) !important;
+}
