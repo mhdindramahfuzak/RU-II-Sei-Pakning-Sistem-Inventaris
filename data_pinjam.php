@@ -19,7 +19,7 @@
         
         <div class="header-section d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="assets/logo.png" alt="Logo" class="header-logo" style="height: 50px; width:auto; margin-right: 15px;">
+                <img src="assets/logo.jpg" alt="Logo" class="header-logo" style="height: 50px; width:auto; margin-right: 15px;">
                 <div>
                     <h2 class="mb-0 fw-bold" style="font-size: 1.5rem;">Riwayat Peminjaman</h2>
                     <p class="mb-0 small opacity-75">Kilang Pertamina Internasional RU II Sei Pakning</p>

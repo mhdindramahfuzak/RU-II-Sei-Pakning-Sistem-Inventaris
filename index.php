@@ -20,7 +20,7 @@
             <div class="row align-items-center">
                 <div class="col-md-9">
                     <div class="d-flex align-items-center">
-                        <img src="assets/logo.png" alt="Logo Pertamina" class="header-logo">
+                        <img src="assets/logo.jpg" alt="Logo Pertamina" class="header-logo">
                         
                         <div>
                             <h1 class="company-title">Kilang Pertamina Internasional</h1>
