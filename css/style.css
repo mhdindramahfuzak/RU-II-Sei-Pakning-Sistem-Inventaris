@@ -251,3 +251,72 @@ body {
     /* Ganti background jadi gradasi biru tua ke merah khas BUMN jika mau */
     background: linear-gradient(135deg, #00539C 0%, #B0171F 100%) !important;
 }
+@media (max-width: 768px) {
+    
+    /* 1. Perbaikan Layout Container */
+    .main-container {
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 0; /* Hilangkan radius agar full screen */
+    }
+
+    /* 2. Header Pertamina di HP */
+    .header-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-section .d-flex {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .header-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 60px; /* Logo lebih kecil */
+    }
+    .company-title {
+        font-size: 1.2rem; /* Font judul lebih kecil */
+    }
+    .company-subtitle {
+        font-size: 0.9rem;
+        display: block;
+    }
+    .col-md-3.text-end {
+        text-align: center !important;
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+
+    /* 3. Tombol Aksi Jadi Full Width (Mudah ditekan jempol) */
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-modern {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 15px; /* Area sentuh lebih besar */
+    }
+
+    /* 4. Statistik Card jadi 2 kolom (Grid) */
+    .row.mb-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .col-md-3 {
+        width: 100%;
+        padding: 0;
+    }
+    .stats-card {
+        padding: 15px;
+        min-height: 140px; /* Tinggi seragam */
+    }
+    .stats-card h3 { font-size: 1.5rem; }
+    .stats-card .icon { width: 40px; height: 40px; font-size: 18px; }
+
+    /* 5. Form Input di HP */
+    .form-container { padding: 15px; }
+    .form-body { padding: 20px; }
+}

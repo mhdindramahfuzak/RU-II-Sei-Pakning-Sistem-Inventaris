@@ -128,10 +128,9 @@ if (isset($_POST['simpan'])) {
                             <i class="fas fa-calendar"></i> Tanggal Input
                         </label>
                         <input type="date" name="tanggal_input" class="form-control" value="<?= date('Y-m-d'); ?>">
-                    </div>
-                    
-                    <div class="d-flex justify-content-between mt-4">
-                        <a href="index.php" class="btn btn-modern btn-secondary-modern">
+                    </div>   
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-between mt-4">
+                        <a href="index.php" class="btn btn-modern btn-secondary-modern me-md-2">
                             <i class="fas fa-arrow-left"></i> Batal
                         </a>
                         <button type="submit" name="simpan" class="btn btn-modern btn-primary-modern">
